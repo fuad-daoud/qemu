@@ -1,0 +1,1 @@
+qemu-system-x86_64 -machine q35 -enable-kvm -cpu host -smp 8 -m 10G -drive file=/home/fuad/ubuntu/ubuntu.qcow2,format=qcow2,if=virtio -vga virtio -display gtk,gl=on -netdev user,id=net0 -device virtio-net,netdev=net0
